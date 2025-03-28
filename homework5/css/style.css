@@ -1,0 +1,22 @@
+.parent{
+    background: #e5d5f1;
+    border: 1px solid black;
+    height: 500px;
+    overflow: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.block{
+    display: inline-block;
+}
+.card{
+    font-size: 20px;
+    text-align: left;
+    width: 370px;
+    height: 220px;
+    margin: 10px 10px 10px 5px;
+    background: #ad7f5a;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding-left: 30px;
+}
