@@ -1,0 +1,28 @@
+body {
+    background: #403b3b;
+}
+
+.text {
+    color: #fff;
+    font-size: 50px;
+}
+
+.wrapper {
+    min-height: 100px;
+    background: #807272;
+    border-radius: 20px;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    left: 50%;
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    background: #d30000;
+    border-radius: 50%;
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+}

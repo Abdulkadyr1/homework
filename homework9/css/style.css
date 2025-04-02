@@ -1,0 +1,41 @@
+body{
+    background: #574e4e;
+    font-size: 5em;
+    text-align: center;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    margin-top: 50px;
+    position: relative;
+}
+
+.title::before{
+    content: '';
+    display: block;
+    background: hsl(0, 100%, 50%);
+    border-radius: 50px;
+    border: 5px solid #fff;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 380px;
+}
+
+.title::after{
+    content: '';
+    display: block;
+    background: hsl(248, 78%, 37%);
+    border-radius: 50px;
+    border: 5px solid #fff;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: -130px;
+    top: 0px;
+}

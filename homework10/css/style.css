@@ -1,0 +1,52 @@
+body{
+    background: #1a1818;
+    color: green;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: #585151;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box span{
+    opacity: 0;
+}
+
+.box__scale {
+    position: absolute;
+    top: -100px;
+    left: -300px;
+    right: 600px;
+    height: 30px;
+    background: #fff;
+}
+
+.box:hover span{
+    opacity: 1;
+}
+
+.box:hover .box__scale{
+    right: -300px;
+}
+
+.box__scale{
+    transition-duration: 1s;
+}
+
+.box:hover span{
+    transition-delay: 1s;
+    transition-duration: .5s;
+}
