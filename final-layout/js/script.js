@@ -66,17 +66,17 @@ const accordionList = document.querySelectorAll('.accordion-list')
 for (i = 0; i < accordionList.length; i++) {
     accordionList[i].addEventListener('click', (event) => {
         const accordionButton = event.target.closest('.accordion-list-button')
-        if (!accordionButton){
+        if (!accordionButton) {
             return
         }
         const accordionItem = accordionButton.parentElement;
         const accordionContent = accordionButton.nextElementSibling
-        
+
         const accordionListContainer = accordionItem.closest('.accordion-list')
-        
+
         const accordionItemArr = accordionListContainer.querySelectorAll('.accordion__item--open')
-        for (j=0; j < accordionItemArr.length; j++){
-            if (accordionItemArr[j].classList.contains('accordion__item--open') && accordionItemArr[j] != accordionItem){
+        for (j = 0; j < accordionItemArr.length; j++) {
+            if (accordionItemArr[j].classList.contains('accordion__item--open') && accordionItemArr[j] != accordionItem) {
                 accordionItemArr[j].classList.remove('accordion__item--open')
                 accordionItemArr[j].querySelector('.accordion-list__content').style.maxHeight = null
             }
@@ -91,3 +91,33 @@ for (i = 0; i < accordionList.length; i++) {
 
     })
 }
+
+
+const swiper = new Swiper('.gallery__slider', {
+    spaceBetween: 20,
+    slidesPerView: 2,
+
+    pagination: {
+        el: '.gallery__pagination',
+        type: 'fraction',
+    },
+
+    navigation: {
+        nextEl: '.gallery__next',
+        prevEl: '.gallery__prev',
+    },
+
+    breakpoints: {
+        600:{
+            slidesPerView: 3,
+        },
+
+        801: {
+            spaceBetween: 32,
+        },
+
+        1101: {
+            slidesPerView: 4,
+        }
+    }
+});
