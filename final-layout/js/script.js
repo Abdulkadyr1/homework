@@ -108,16 +108,39 @@ const swiper = new Swiper('.gallery__slider', {
     },
 
     breakpoints: {
-        600:{
+        600: {
             slidesPerView: 3,
-        },
-
-        801: {
-            spaceBetween: 32,
         },
 
         1101: {
             slidesPerView: 4,
+            spaceBetween: 32,
         }
     }
+});
+
+new Swiper('.testimonials__slider', {
+    spaceBetween: 0,
+    slidesPerView: 1,
+    centeredSlides: true,
+
+    navigation: {
+        nextEl: '.testimonials__next',
+        prevEl: '.testimonials__prev',
+    },
+
+    scrollbar: {
+        el: '.testimonials__scrollbar',
+        draggable: true,
+    },
+
+    breakpoints: {
+        851: {
+            slidesPerView: 1.5,
+        },
+
+        1101: {
+            slidesPerView: 2,
+        }
+    },
 });
