@@ -1,0 +1,25 @@
+body {
+    font-family: "Readex Pro", "Arial", sans-serif;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1294px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+}
