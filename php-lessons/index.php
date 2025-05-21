@@ -8,9 +8,13 @@
 <body>
     <?php 
         include "output.php";
+        include "output-cycle.php";
+        include "counter-even.php";
 
         outHtml("div", "Hello");
         outHtml("div", "world");
+        outHtml2("div", "abv", 5);
+        
     ?>
 </body>
 </html>
